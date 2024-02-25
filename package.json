@@ -3,12 +3,15 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "sass": "sass resources/sass/app.sass:public/build/assets/css/app.css",
+        "watch:sass": "nodemon -e scss -x \"npm run sass\""
     },
     "devDependencies": {
         "axios": "^1.6.4",
         "laravel-vite-plugin": "^1.0.0",
-        "sass": "^1.71.0",
+        "nodemon": "^3.1.0",
+        "sass": "^1.71.1",
         "vite": "^5.1.3"
     }
 }
